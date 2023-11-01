@@ -53,4 +53,15 @@
     width: 355px;
     margin-right: 145px;
     padding-top: 125px;
+    padding-bottom: 240px;
   }
+
+  .about_img {
+    position: relative;
+  }
+
+.about__video {
+  position: absolute;
+  bottom: -60%;
+  right: 25%;
+}
