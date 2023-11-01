@@ -1266,6 +1266,7 @@ button,
 }
 
 .about {
+  position: relative;
   margin: 0 auto;
   background: #ffffff;
   width: 1366px;
@@ -1333,14 +1334,19 @@ button,
   padding-bottom: 240px;
 }
 
-.about_img {
-  position: relative;
-}
-
 .about__video {
   position: absolute;
-  bottom: -50%;
-  right: 40%;
+  top: 50%;
+  right: 35%;
+}
+
+.price {
+  margin: 0 auto;
+  background: #F8F9FC;
+  width: 1366px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 120px;
 }
 
 /* @mixin hover-focus {

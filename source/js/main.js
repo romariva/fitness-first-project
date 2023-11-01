@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
+import {priceSection} from './scroll';
 
 // ---------------------------------
 
@@ -9,6 +10,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
+  priceSection();
 
   // Modules
   // ---------------------------------
@@ -24,7 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // ---------------------------------
 
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
+// ❗❗❗ обязательно установите плагины eslint, stylelint,  в редактор кода.
 
 // привязывайте js не на классы, а на дата атрибуты (data-validate)
 
