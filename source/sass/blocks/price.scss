@@ -62,6 +62,7 @@
     padding-bottom: 8px;
     border-bottom: 2px solid #D10A42;
   }
+
   @include focus {
     color: $color-default-blue;
   }
