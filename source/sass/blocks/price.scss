@@ -184,7 +184,7 @@
     color: $color-default-white;
     border: 2px solid $color-focus-gradient;
     border-image: $color-focus-gradient;
-    background-color: $color-focus-gradient;
+    background-image: linear-gradient(to right,rgba(209, 10, 66, 1),rgba(0, 53, 159, 1));
   }
 }
 

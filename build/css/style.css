@@ -1578,7 +1578,8 @@ button,
     -o-border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
        border-image: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159))) 1;
        border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
-    background-color: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159)));
+    background-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159));
   }
 }
 .price__buy.focus-visible:focus {
@@ -1587,7 +1588,8 @@ button,
   -o-border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
      border-image: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159))) 1;
      border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
-  background-color: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159)));
+  background-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159));
 }
 
 .price__img {
