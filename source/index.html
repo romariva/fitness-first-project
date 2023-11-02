@@ -3,10 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="icon" href="favicon.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Проект страница фитнес центра в городе Омск">
     <title>fitness-first-project</title>
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font">
+    <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" as="font">
+    <link rel="preload" href="./fonts/roboto-condensed.woff2" as="font">
+    <link rel="preload" href="./fonts/roboto-condensedBold.woff2" as="font">
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body class="page__body">
@@ -74,32 +78,57 @@
         </section>
         <section class="price">
           <h2 class="visually-hidden">Раздел Абонементы</h2>
-          <div class="price__buttons">
-            <button class="price__button btn" type="button">1 месяц</button>
-            <button class="price__button btn" type="button">6 месяцев</button>
-            <button class="price__button btn" type="button">12 месяцев</button>
+          <h3 class="price__name">Абонементы</h3>
+          <div class="price__button-wrapper">
+            <button class="price__button price__button--active" type="button">1 месяц</button>
+            <button class="price__button " type="button">6 месяцев</button>
+            <button class="price__button" type="button">12 месяцев</button>
           </div>
           <div class="price__cards">
             <ul class="price__list">
               <li class="price__item">
                 <p class="price__header">C тренером</p>
                 <p class="price__info">12 занятий</p>
-                <span class="price__amount">5000</span>
-                <button class="price__button-first btn" type="button">Купить абонемент</button>
+                <span class="price__amount" data-price="5000">5000<span class="price__ruble">
+                    <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z" fill="#102654"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/>
+                      </svg>
+                  </span></span>
+                  </span>
+                  <a class="price__buy" href="#">Купить абонемент</a>
               </li>
-              <li class="price__item">
+              <li class="price__item price__item--active">
                 <p class="price__header">Дневной</p>
                 <p class="price__info">с 8:00 до 17:00</p>
-                <span class="price__amount">1700</span>
-                <button class="price__button-first btn" type="button">Купить абонемент</button>
+                <span class="price__amount" data-price="1700">1700
+                  <span class="price__ruble">
+                    <svg width="30" height="42" viewBox="0 0 30 42" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z" fill="#102654"/>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/>
+                      </svg>
+                  </span></span>
+                  <a class="price__buy price__buy--active" href="#">Купить абонемент</a>
               </li>
               <li class="price__item">
                 <p class="price__header">Полный день</p>
                 <p class="price__info">с 8:00 до 22:00 </p>
-                <span class="price__amount">2700</span>
-                <button class="price__button-first btn" type="button">Купить абонемент</button>
+                <span class="price__amount" data-price="2700">2700
+                  <span class="price__ruble">
+                  <svg width="30" height="42" viewBox="0 0 30 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z" fill="#102654"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z" fill="#102654"/>
+                    </svg>
+                </span></span>
+                <a class="price__buy" href="#">Купить абонемент</a>
               </li>
             </ul>
+            <div class="price__image">
+              <img class="price__img" src="./img/weight_plates.png" width="321" height="384" alt="Фотография блинов от штанги">
+            </div>
           </div>
         </section>
       </main>
