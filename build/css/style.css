@@ -1405,7 +1405,7 @@ button,
   outline: none;
   padding-bottom: 10px;
 }
-.price__button.focus-visible:active {
+.price__button:active:not(.focus-visible):not(:disabled) {
   color: #102654;
 }
 @media (hover: hover) {
@@ -1466,7 +1466,7 @@ button,
   padding-top: 65px;
   padding-bottom: 65px;
 }
-.price__item.focus-visible:active {
+.price__item:active:not(.focus-visible):not(:disabled) {
   border: 7px solid;
   -o-border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
      border-image: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159))) 1;

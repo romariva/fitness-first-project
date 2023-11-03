@@ -1,6 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {priceSection} from './scroll';
+import {handleClick} from './selectMonth';
 
 // ---------------------------------
 
@@ -11,6 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   priceSection();
+  handleClick();
 
   // Modules
   // ---------------------------------
