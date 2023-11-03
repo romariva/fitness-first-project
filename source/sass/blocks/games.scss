@@ -1,0 +1,105 @@
+.games {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  background: $color-default-white;
+  width: 1366px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 120px;
+}
+
+.games__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #ED0233;
+  width: 500px;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-bottom: 80px;
+}
+
+.games__info {
+  display: flex;
+}
+
+.games__information {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-left: 68px;
+}
+
+.games__header {
+  color: $color-default-white;
+  font-family: "Alumni Sans Semi";
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 76px;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.games__date1 {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.games__description {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+}
+
+.games__date2 {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.games__date3 {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 14px;
+  padding-left: 6px;
+}
+
+.games__date4 {
+  display: flex;
+}
+
+.games__link {
+  display: flex;
+  width: 340px;
+  padding: 27px 56px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 2px solid $color-default-white;
+  color: $color-default-white;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
