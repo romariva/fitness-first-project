@@ -25,10 +25,33 @@
 }
 
 .games__information {
+  position: relative;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   padding-left: 68px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 29px;
+    right: 31px;
+    width: 64px;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+
+  &::before{
+    content: "";
+    position: absolute;
+    top: 110px;
+    right: 3px;
+    width: 90px;
+    height: 1px;
+    background-color: $color-default-white;
+  }
+
+
 }
 
 .games__header {
@@ -51,6 +74,7 @@
   font-weight: 300;
   line-height: 24px;
 }
+
 
 .games__description {
   color: $color-default-white;
