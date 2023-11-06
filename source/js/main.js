@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {priceSection} from './scroll';
-import {handleClick} from './selectMonth';
+import {scrollPriceSection} from './modules/scroll';
+import {initSliderJury} from './modules/slider';
 
 // ---------------------------------
 
@@ -11,8 +11,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // ---------------------------------
 
   iosVhFix();
-  priceSection();
-  handleClick();
+
 
   // Modules
   // ---------------------------------
@@ -23,6 +22,9 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    scrollPriceSection();
+    initSliderJury();
+
   });
 });
 

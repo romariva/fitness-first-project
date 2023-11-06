@@ -1,0 +1,71 @@
+.jury {
+  margin: 0 auto;
+  background: $color-default-white;
+  width: 1366px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 120px;
+}
+
+.jury__header {
+  color: $color-default-blue;
+  font-family: "Alumni Sans Semi";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  padding-bottom: 48px;
+}
+
+.swiper___wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1160px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.swiper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper .swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.jury__image {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 294px;
+}
+
+.jury__btn-prev, .jury__btn-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  width: 18px;
+  height: 34px;
+  z-index: 10
+}
+
+.jury__btn-prev {
+  left: 9px;
+}
+
+.jury__btn-next {
+  right: 9px;
+}

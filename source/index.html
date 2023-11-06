@@ -8,7 +8,6 @@
   <title>fitness-first-project</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="preload" href="./fonts/AlumniSans-SemiBold.woff2" as="font">
-  <link rel="preload" href="./fonts/AlumniSans-ExtraBold.woff2" as="font">
   <link rel="preload" href="./fonts/roboto-condensed.woff2" as="font">
   <link rel="preload" href="./fonts/roboto-condensedBold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
@@ -47,7 +46,7 @@
           <div class="hero__info">
             <p class="hero__city">ОМСК</p>
             <p class="hero__name">ФИТНЕС<br>ЦЕНТР</p>
-            <button class="hero__button btn" type="button">Купить абонимент</button>
+            <button class="hero__button btn" type="button" data-buy="price">Купить абонимент</button>
           </div>
           <div class="hero__image">
             <a class="hero__link" href="index.html">
@@ -79,7 +78,7 @@
           </div>
         </div>
       </section>
-      <section class="price">
+      <section class="price" data-price="btn">
         <h2 class="visually-hidden">Раздел Абонементы</h2>
         <h3 class="price__name">Абонементы</h3>
         <div class="price__button-wrapper">
@@ -152,48 +151,32 @@
           <img class="games__img" src="./img/games.png" width="660" height="500" alt="Фотография спортсмена">
         </div>
       </section>
-      <section class="judges">
+      <section class="jury">
         <h2 class="visually-hidden">Раздел жюри</h2>
-        <div class="judges___wrapper">
-          <div class="judges__info">
-            <h3 class="judges__header">Жюри</h3>
+          <div class="jury__info">
+            <h3 class="jury__header">Жюри</h3>
           </div>
-          <div class="swiper">
-            <h2 class="visually-hidden">Слайдер</h2>
-            <div class="swiper-wrapper">
-              <div class="swiper-button-prev">
-                <svg width="18" height="34" viewBox="0 0 18 34" xmlns="http://www.w3.org/2000/svg">
+        <div class="swiper___wrapper">
+          <h2 class="visually-hidden">Слайдер</h2>
+            <div class="swiper" data-swiper="jury">
+              <div class="swiper-wrapper">
+                <div class="jury__image swiper-slide"><img class="jury__img" src="./img/jury1.png" width="260" height="294" alt="Фото Анна Павлова"></div>
+                <div class="jury__image swiper-slide"><img class="jury__img" src="./img/jury2.png" width="260" height="294" alt="Фото Алексей Лавров"></div>
+                <div class="jury__image swiper-slide"><img class="jury__img" src="./img/jury3.png" width="260" height="294" alt="Фото Александр Пашков"></div>
+                <div class="jury__image swiper-slide"><img class="jury__img" src="./img/jury4.png" width="260" height="294" alt="Фото Мария Кетова"></div>
+              <div class="jury__btn-prev" data-button="prev">
+                  <svg width="18" height="34" viewBox="0 0 18 34" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#left" />
                 </svg>
               </div>
-              <div class="swiper-slide">
-                <div class="judges__image">
-                  <img class="judges__img" src="./img/judges1.png" width="260" height="294" alt="Фото Анна Павлова">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="judges__image">
-                  <img class="judges__img" src="./img/judges2.png" width="260" height="294" alt="Фото Алексей Лавров">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="judges__image">
-                  <img class="judges__img" src="./img/judges3.png" width="260" height="294" alt="Фото Александр Пашков">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="judges__image">
-                  <img class="judges__img" src="./img/judges4.png" width="260" height="294" alt="Фото Мария Кетова">
-                </div>
-              </div>
-              <div class="swiper-button-next">
-                <svg width="18" height="34" viewBox="0 0 18 34" xmlns="http://www.w3.org/2000/svg">
+                <div class="jury__btn-next" data-button="next">
+                  <svg width="18" height="34" viewBox="0 0 18 34" xmlns="http://www.w3.org/2000/svg">
                   <use href="img/sprite.svg#right" />
                 </svg>
               </div>
+              </div>
             </div>
           </div>
-      </div>
     </section>
     </main>
     <footer>

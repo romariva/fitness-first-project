@@ -2639,22 +2639,16 @@ button,
   text-transform: uppercase;
 }
 
-.judges {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.jury {
   margin: 0 auto;
   background: #ffffff;
   width: 1366px;
-  padding-left: 47px;
-  padding-right: 47px;
+  padding-left: 103px;
+  padding-right: 103px;
   padding-top: 120px;
 }
 
-.judges__header {
+.jury__header {
   color: #102654;
   font-family: "Alumni Sans Semi";
   font-size: 54px;
@@ -2664,7 +2658,78 @@ button,
   letter-spacing: 1.62px;
   margin: 0;
   padding-bottom: 48px;
-  padding-left: 56px;
+}
+
+.swiper___wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1160px;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.swiper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1160px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper .swiper-wrapper {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.jury__image {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  max-height: 294px;
+}
+
+.jury__btn-prev, .jury__btn-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
+  width: 18px;
+  height: 34px;
+  z-index: 10;
+}
+
+.jury__btn-prev {
+  left: 9px;
+}
+
+.jury__btn-next {
+  right: 9px;
 }
 
 /* @mixin hover-focus {
