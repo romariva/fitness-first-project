@@ -58,7 +58,6 @@
   }
   @include hover-focus {
     color: $color-default-blue;
-    color: $color-default-blue;
     padding-bottom: 8px;
     border-bottom: 2px solid #D10A42;
   }
@@ -69,7 +68,6 @@
 }
 
 .price__button--active {
-    color: $color-default-blue;
     color: $color-default-blue;
     padding-bottom: 8px;
     border-bottom: 2px solid #D10A42;

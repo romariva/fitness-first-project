@@ -1,0 +1,132 @@
+.offers {
+  margin: 0 auto;
+  background: $color-default-white;
+  width: 1366px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.offers__header {
+  text-align: center;
+  color: $color-default-blue;
+  font-family: "Alumni Sans Semi";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.offers__wrapper {
+  display: flex;
+
+  gap: 40px;
+}
+
+.offers__left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.offers__right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+}
+
+.offers__info {
+  width: 280px;
+  background: #ED0233;
+  padding: 40px 45px;
+  min-height: 462px;
+}
+
+.offers__time {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
+.offers__price {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 70px;
+  padding-bottom: 25px;
+}
+
+.offers__desc {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  padding-bottom: 174px;
+  margin: 0;
+}
+
+.offers__link {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  border-bottom: 1px solid $color-default-white;
+}
+
+.offers__link--color {
+  color: $color-default-blue;
+  border-bottom: 1px solid $color-default-blue;
+}
+
+.offers__information {
+  color: $color-default-blue;
+  font-family: "Roboto Condensed";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.offers__description {
+  color: $color-default-blue;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+  margin: 0;
+  padding-bottom: 44px;
+}
+
+.offers__first {
+  border: 7px solid;
+  border-image: $color-focus-gradient;
+  padding: 35px 30px;
+}
+
+
+.offers__second {
+  border: 7px solid;
+  border-image: $color-focus-gradient;
+  padding: 35px 30px;
+}
