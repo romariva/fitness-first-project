@@ -3007,6 +3007,69 @@ button,
   padding-bottom: 48px;
 }
 
+.reviews {
+  margin: 0 auto;
+  background: #ffffff;
+  width: 1366px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.reviews__header {
+  text-align: center;
+  color: #102654;
+  font-family: "Alumni Sans Semi";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.reviews__wrapper {
+  width: 560px;
+  padding: 60px;
+  color: #ffffff;
+  background: #102654;
+  -webkit-box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.2);
+          box-shadow: 0px 0px 40px 0px rgba(28, 51, 116, 0.2);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 30px;
+}
+
+.reviews__img {
+  border-radius: 80px;
+  background: url(<path-to-image>), lightgray -25.751px -17px/156.878% 218.339% no-repeat;
+}
+
+.reviews__information {
+  margin: 0;
+  padding-bottom: 21px;
+  font-family: "Roboto Condensed";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.reviews__descriprion {
+  margin: 0;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
