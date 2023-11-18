@@ -55,3 +55,46 @@
   font-weight: 300;
   line-height: 24px;
 }
+
+.reviews__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.reviews__slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1160px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.swiper .swiper-wrapper {
+  box-sizing: content-box;
+}
+
+.reviews__btn-prev, .reviews__btn-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%);
+  width: 18px;
+  height: 34px;
+  z-index: 10
+}
+
+.reviews__btn-prev {
+  left: 9px;
+}
+
+.reviews__btn-next {
+  right: 9px;
+}

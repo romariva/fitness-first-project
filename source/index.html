@@ -160,7 +160,7 @@
       <div class="jury__info">
         <h3 class="jury__header">Жюри</h3>
       </div>
-      <div class="swiper___wrapper">
+      <div class="swiper__wrapper jury__wrapper">
         <h2 class="visually-hidden">Слайдер</h2>
         <div class="swiper" data-swiper="jury">
           <div class="swiper-wrapper">
@@ -329,9 +329,9 @@
     <section class="reviews">
       <h2 class="visually-hidden">Раздел отзывы.</h2>
       <h3 class="reviews__header">Отзывы</h3>
-      <div class="swiper___wrapper reviews__container">
+      <div class="swiper__wrapper reviews__container">
         <h2 class="visually-hidden">Слайдер</h2>
-        <div class="swiper " data-swiper="reviews">
+        <div class="swiper" data-swiper="reviews">
           <div class=" reviews__wrapper swiper-slide">
             <img class="reviews__img" src="./img/Ellipse1.png" width="80" height="80" alt="Фотография клиента.">
             <div class="reviews__info">
@@ -353,8 +353,72 @@
         </div>
       </div>
     </section>
+    <section class="form">
+      <h2 class="visually-hidden">Раздел контактов.</h2>
+    <div class="form__wrapper">
+      <div class="form__free">
+      <h3 class="visually-hidden">Форма записи на бесплатное занятие.</h3>
+      <form class="form__name" action="https://echo.htmlacademy.ru/" method="get">
+        <legend class="form__legend"></legend>
+        <ul class="form__list">
+          <li class="form__item">
+            <label class="form__label" for="name"></label>
+            <input class="form__input input" type="text" name="name" required id="name"
+              placeholder="Имя">
+          </li>
+          <li class="form__item">
+            <label class="form__label" for="surname"></label>
+            <input class="form__input input" type="text" name="surname" required id="name"
+              placeholder="Фамилия">
+          </li>
+          <button class="form__button btn">ОТПРАВИТЬ</button>
+      </form>
+      </div>
+      <div class="form__contact">
+        <h3 class="visually-hidden">Контакты и адрес фитнесцентра.</h3>
+        <ul class="form__contact-list">
+          <li class="form__contact-item">
+            <p class="form__contact-header">Адрес:</p>
+            <p class="form__contact-description">г. Омск, ул. 60 лет Октября, 7</p>
+          </li>
+          <li class="form__contact-item">
+            <p class="form__contact-header">График работы:</p>
+            <p class="form__contact-description">Пн-Вс: с 8:00 до 22:00</p>
+          </li>
+          <li class="form__contact-item">
+            <p class="form__contact-header">Телефон:</p>
+            <p class="form__contact-description">8-800-555-55-55</p>
+          </li>
+          <li class="form__contact-item">
+            <p class="form__contact-header">Email:</p>
+            <p class="form__contact-description">omsk@supergym.ru</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </section>
   </main>
-  <footer>
+  <footer class="main-footer">
+    <a class="main-header__logo" href="index.html">
+      <img class="main-header__img" src="./img/svg/logotype.svg" alt="Логотим SUPERGYM.">
+    </a>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a class="site-list__link" href="#">Главная</a>
+        </li>
+        <li class="site-list__item site-list__item--space">
+          <a class="site-list__link" href="#">Фото и видео</a>
+        </li>
+        <li class="site-list__item site-list__item--space2 site-list__item--active">
+          <a class="site-list__link" href="form.html">Форма Отзыва</a>
+        </li>
+        <li class="site-list__item site-list__item--right">
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
   </footer>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
