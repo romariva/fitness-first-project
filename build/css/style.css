@@ -2888,6 +2888,7 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 40px;
+  width: 546px;
 }
 
 .offers__info {
@@ -2982,6 +2983,28 @@ button,
      border-image: -webkit-gradient(linear, left top, right top, from(rgb(209, 10, 66)), to(rgb(0, 53, 159))) 1;
      border-image: linear-gradient(to right, rgb(209, 10, 66), rgb(0, 53, 159)) 1;
   padding: 35px 30px;
+}
+
+.faq {
+  margin: 0 auto;
+  background: #F8F9FC;
+  width: 1366px;
+  padding-left: 103px;
+  padding-right: 103px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.faq__header {
+  color: #102654;
+  font-family: "Alumni Sans Semi";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  margin: 0;
+  padding-bottom: 48px;
 }
 
 /* @mixin hover-focus {
