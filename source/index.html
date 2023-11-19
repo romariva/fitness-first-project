@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,7 +12,6 @@
   <link rel="preload" href="./fonts/roboto-condensedBold.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
-
 <body class="page__body">
   <div class="header__wrapper">
     <header class="main-header">
@@ -355,73 +353,104 @@
     </section>
     <section class="form">
       <h2 class="visually-hidden">Раздел контактов.</h2>
-    <div class="form__wrapper">
-      <div class="form__free">
-      <h3 class="visually-hidden">Форма записи на бесплатное занятие.</h3>
-      <form class="form__name" action="https://echo.htmlacademy.ru/" method="get">
-        <legend class="form__legend"></legend>
-        <ul class="form__list">
-          <li class="form__item">
-            <label class="form__label" for="name"></label>
-            <input class="form__input input" type="text" name="name" required id="name"
-              placeholder="Имя">
-          </li>
-          <li class="form__item">
-            <label class="form__label" for="surname"></label>
-            <input class="form__input input" type="text" name="surname" required id="name"
-              placeholder="Фамилия">
-          </li>
-          <button class="form__button btn">ОТПРАВИТЬ</button>
-      </form>
+      <div class="form__wrapper">
+        <div class="form__free">
+          <h3 class="form__header">Бесплатное занятие</h3>
+          <form class="form__name" action="https://echo.htmlacademy.ru/" method="get">
+            <fieldset class="form__user">
+              <legend class="form__legend"></legend>
+              <ul class="form__list">
+                <li class="form__item">
+                  <label class="form__label" for="username"></label>
+                  <input class="form__input input" type="text" name="form" required id="username" placeholder="Имя">
+                </li>
+                <li class="form__item">
+                  <label class="form__label" for="surname"></label>
+                  <input class="form__input input" type="text" name="form" required id="surname" placeholder="Фамилия">
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="form__send">
+              <button class="form__button">ОТПРАВИТЬ</button>
+            </fieldset>
+          </form>
+        </div>
+        <div class="form__contact">
+          <h3 class="form__header form__header--color">Контакты</h3>
+          <ul class="form__contact-list">
+            <li class="form__contact-item">
+              <span class="form__contact-header">Адрес:</span><br>
+              <span class="form__contact-description">г. Омск, ул. 60 лет Октября, 7</span>
+            </li>
+            <li class="form__contact-item">
+              <span class="form__contact-header">График работы:</span><br>
+              <span class="form__contact-description">Пн-Вс: с 8:00 до 22:00</span>
+            </li>
+            <li class="form__contact-item">
+              <span class="form__contact-header">Телефон:</span><br>
+              <span class="form__contact-description">8-800-555-55-55</span>
+            </li>
+            <li class="form__contact-item">
+              <span class="form__contact-header">Email:</span><br>
+              <span class="form__contact-description">omsk@supergym.ru</span>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="form__contact">
-        <h3 class="visually-hidden">Контакты и адрес фитнесцентра.</h3>
-        <ul class="form__contact-list">
-          <li class="form__contact-item">
-            <p class="form__contact-header">Адрес:</p>
-            <p class="form__contact-description">г. Омск, ул. 60 лет Октября, 7</p>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__container">
+      <a class="main-header__logo" href="index.html">
+        <img class="main-header__img" src="./img/svg/logotype.svg" alt="Логотим SUPERGYM.">
+      </a>
+      <div class="main-footer__wrapper">
+        <ul class="main-footer__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Услуги</a>
           </li>
-          <li class="form__contact-item">
-            <p class="form__contact-header">График работы:</p>
-            <p class="form__contact-description">Пн-Вс: с 8:00 до 22:00</p>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Абонементы</a>
           </li>
-          <li class="form__contact-item">
-            <p class="form__contact-header">Телефон:</p>
-            <p class="form__contact-description">8-800-555-55-55</p>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Акции</a>
           </li>
-          <li class="form__contact-item">
-            <p class="form__contact-header">Email:</p>
-            <p class="form__contact-description">omsk@supergym.ru</p>
+          <li class="site-list__item">
+            <a class="site-list__link" href="#">Расписание</a>
+          </li>
+        </ul>
+      </div>
+      <div class="main-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <span class="visually-hidden">Vkontakte.</span>
+            <a class="social__link social__link--VK" href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#vk" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Odnoklasniki.</span>
+            <a class="social__link social__link--OK" href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#OK" />
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <span class="visually-hidden">Reddit.</span>
+            <a class="social__link social__link--Reddit" href="#">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <use href="img/sprite.svg#Reddit" />
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
     </div>
-    </section>
-  </main>
-  <footer class="main-footer">
-    <a class="main-header__logo" href="index.html">
-      <img class="main-header__img" src="./img/svg/logotype.svg" alt="Логотим SUPERGYM.">
-    </a>
-    <div class="main-nav__wrapper">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">Главная</a>
-        </li>
-        <li class="site-list__item site-list__item--space">
-          <a class="site-list__link" href="#">Фото и видео</a>
-        </li>
-        <li class="site-list__item site-list__item--space2 site-list__item--active">
-          <a class="site-list__link" href="form.html">Форма Отзыва</a>
-        </li>
-        <li class="site-list__item site-list__item--right">
-          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
   </footer>
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
-
 </html>
