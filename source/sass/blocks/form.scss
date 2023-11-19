@@ -8,13 +8,32 @@
 .form__free {
   padding: 60px 103px;
   width: 683px;
+  min-height: 337px;
   background: $color-default-blue;
 }
 
 .form__contact {
+
   padding: 60px 103px;
   width: 683px;
   background: $color-default-white;
+
+
+}
+
+.form__contact-wrapper--line {
+   position: relative;
+
+    &::after {
+    position: absolute;
+    transform: rotate(90deg);
+    content: "";
+    top: 62px;
+    right: -109px;
+    width: 117px;
+    height: 1px;
+    background-color: #74819C;;
+  }
 }
 
 .form__header {
@@ -41,6 +60,29 @@
   padding: 0;
 }
 
+.form__item {
+  border-bottom: 1px solid #74819C;
+}
+
+.form__input {
+  width: 190px;
+  color: $color-default-white;
+  background-color: $color-default-blue;
+  border: 0 none;
+  width: 190px;
+  height: 36px;
+  outline: none;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.form__input::placeholder {
+    color: $color-default-white;
+  }
+
 .form__user {
   padding: 0;
   border:0 none;
@@ -49,4 +91,54 @@
 .form__send {
   padding: 0;
   border:0 none;
+}
+
+.form__send {
+  margin-top: 28px;
+}
+
+.form__button {
+  color: $color-default-white;
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  width: 410px;
+  padding: 27px 56px;
+  margin: 0;
+}
+
+.form__contact-list {
+  margin: 0;
+  display: flex;
+  gap: 120px;
+
+}
+
+.form__contact-header {
+  color: $color-default-blue;
+  font-family: "Roboto Condensed";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.form__contact-desc {
+  color: $color-default-blue;
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.form__contact-wrapper {
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
 }
